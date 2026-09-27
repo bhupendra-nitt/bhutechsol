@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bhupendra Tech Solutions | Software, data and AI engineering in Indore</title>
+<meta name="description" content="Bhupendra Tech Solutions builds web apps, mobile apps, data platforms and AI-powered tools for businesses. Based in Mhow, Indore.">
+<link rel="canonical" href="https://bhutechsol.com/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="Bhupendra Tech Solutions">
+<meta property="og:description" content="Web apps, mobile apps, data platforms and AI-powered tools, built by an experienced engineering team in Indore.">
+<meta property="og:url" content="https://bhutechsol.com/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#321F47">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Bhupendra Tech Solutions",
+  "url": "https://bhutechsol.com/",
+  "email": "info@bhutechsol.com",
+  "telephone": "+91-9538960710",
+  "taxID": "23DMEPS7479J1ZD",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "01, Narayan Dham, Gawli Palasia",
+    "addressLocality": "Mhow, Indore",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "453441",
+    "addressCountry": "IN"
+  }
+}
+</script>
+<style>
+:root{
+  --ink:#321F47;
+  --ink-soft:#5a4a6e;
+  --paper:#F7FAFB;
+  --mist:#E4F1F4;
+  --sky:#7FC3D1;
+  --leaf:#5C7B00;
+  --sun:#FDC04F;
+  --white:#fff;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --text:"Instrument Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --wrap:1160px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--text);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:4px}
+.wrap{width:min(100% - 2.5rem, var(--wrap));margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0;letter-spacing:-.02em}
+p{margin:0}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:10;background:rgba(247,250,251,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(50,31,71,.08)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:72px}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.brand img{width:34px;height:auto}
+.brand span{font-family:var(--display);font-weight:700;font-size:1.05rem;letter-spacing:-.01em}
+.nav{display:flex;align-items:center;gap:1.75rem}
+.nav a{text-decoration:none;font-weight:500;font-size:.98rem;color:var(--ink-soft)}
+.nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.25rem;border-radius:999px;font-weight:600;font-size:.98rem;text-decoration:none;border:2px solid var(--ink);transition:background-color .15s,color .15s}
+.btn-solid{background:var(--ink);color:var(--white)}
+.btn-solid:hover{background:#4a3266;border-color:#4a3266}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--white)}
+.nav .btn{color:var(--white);padding:.6rem 1.1rem}
+.menu-toggle{display:none;background:none;border:0;padding:.5rem;cursor:pointer;color:var(--ink)}
+
+/* Hero */
+.hero{padding:clamp(3rem,7vw,6rem) 0 clamp(3.5rem,8vw,7rem);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.7rem);font-weight:800;max-width:16ch}
+.hero .lede{margin-top:1.5rem;font-size:clamp(1.1rem,1.6vw,1.28rem);color:var(--ink-soft);max-width:36em}
+.hero .actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
+.hero .where{margin-top:2.5rem;font-size:.95rem;color:var(--ink-soft);display:flex;align-items:center;gap:.6rem}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--ink);flex:none}
+.mark-art{width:100%;max-width:440px;justify-self:end}
+.mark-art .block{opacity:0;transform:translateX(-14px);animation:slide .7s cubic-bezier(.2,.7,.2,1) forwards}
+.mark-art .b2{animation-delay:.12s}.mark-art .b3{animation-delay:.24s}
+.mark-art .trace{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw 1.3s .45s cubic-bezier(.6,0,.3,1) forwards}
+.mark-art .node{transform-box:fill-box;transform-origin:center;transform:scale(0);animation:pop .35s cubic-bezier(.3,1.6,.5,1) forwards}
+.mark-art .n1{animation-delay:.45s}.mark-art .n2{animation-delay:.9s}.mark-art .n3{animation-delay:1.4s}
+@keyframes slide{to{opacity:1;transform:none}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{to{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .mark-art .block,.mark-art .trace,.mark-art .node{animation:none;opacity:1;transform:none;stroke-dashoffset:0}
+}
+
+/* Sections */
+section{padding:clamp(4rem,8vw,6.5rem) 0}
+.section-head{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:end;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.section-head h2{font-size:clamp(2rem,4vw,3.1rem);font-weight:700;max-width:18ch}
+.section-head p{color:var(--ink-soft);max-width:34em}
+
+/* Services */
+.services{background:var(--white)}
+.service-list{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.service{display:grid;grid-template-columns:18px 1fr 1.25fr;gap:clamp(1rem,3vw,2.5rem);padding:2rem 0;border-bottom:1px solid rgba(50,31,71,.14);align-items:start}
+.swatch{width:18px;height:52px;border-radius:0 9px 9px 0;margin-top:.3rem}
+.service h3{font-size:clamp(1.35rem,2.2vw,1.7rem);font-weight:700}
+.service p{color:var(--ink-soft)}
+.tags{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1rem;padding:0;list-style:none}
+.tags li{font-size:.85rem;font-weight:500;padding:.25rem .7rem;border-radius:999px;background:var(--mist);color:var(--ink)}
+
+/* Process */
+.steps{--gap:2rem;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);position:relative;counter-reset:step}
+.steps::before{content:"";position:absolute;left:14px;right:calc((100% - 3 * var(--gap)) / 4 - 14px);top:12px;height:4px;background:var(--ink);border-radius:2px}
+.step{position:relative;padding-top:3.2rem;counter-increment:step}
+.step::before{content:"";position:absolute;top:0;left:0;width:28px;height:28px;border-radius:50%;background:var(--ink);box-shadow:0 0 0 6px var(--paper)}
+.step .num{font-family:var(--display);font-weight:700;font-size:.95rem;color:var(--leaf)}
+.step .num::before{content:"Step " counter(step)}
+.step h3{font-size:1.35rem;font-weight:700;margin:.35rem 0 .6rem}
+.step p{color:var(--ink-soft);font-size:1rem}
+
+/* Stack */
+.stack{background:var(--mist)}
+.stack .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.stack h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:700;max-width:16ch}
+.stack .intro{margin-top:1rem;color:var(--ink-soft)}
+.stack-groups{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem 2.5rem}
+.stack-groups h3{font-family:var(--text);font-size:.95rem;font-weight:600;color:var(--leaf);letter-spacing:0;margin-bottom:.5rem}
+.stack-groups p{font-family:var(--display);font-weight:500;font-size:1.2rem;line-height:1.45}
+
+/* About */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:start}
+.about h2{font-size:clamp(2rem,4vw,3.1rem);font-weight:700;max-width:16ch}
+.about .body p+p{margin-top:1.1rem}
+.about .body{color:var(--ink-soft);font-size:1.1rem;max-width:34em}
+.about .body strong{color:var(--ink);font-weight:600}
+.facts{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:.9rem}
+.facts li{display:flex;gap:.8rem;align-items:baseline;color:var(--ink)}
+.facts li::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--sun);border:2px solid var(--ink);flex:none;transform:translateY(-1px)}
+
+/* Contact */
+.contact{background:var(--ink);color:var(--white)}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,6rem)}
+.contact h2{font-size:clamp(2.2rem,4.6vw,3.6rem);font-weight:800;max-width:14ch}
+.contact .lede{margin-top:1.2rem;color:rgba(255,255,255,.75);max-width:30em}
+.channels{list-style:none;padding:0;margin:2.2rem 0 0;display:grid;gap:1.1rem}
+.channels .label{display:block;font-size:.85rem;color:var(--sky)}
+.channels a,.channels span.value{font-size:1.15rem;font-weight:500;text-decoration:none;color:var(--white)}
+.channels a:hover{text-decoration:underline;text-underline-offset:4px}
+.contact .actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
+.contact .btn-solid{background:var(--sun);border-color:var(--sun);color:var(--ink)}
+.contact .btn-solid:hover{background:#ffd27d;border-color:#ffd27d}
+.contact .btn-line{border-color:rgba(255,255,255,.6);color:var(--white)}
+.contact .btn-line:hover{background:var(--white);color:var(--ink);border-color:var(--white)}
+form{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:clamp(1.5rem,3vw,2.2rem);display:grid;gap:1.1rem;align-self:start}
+form h3{font-size:1.4rem;font-weight:700}
+label{display:grid;gap:.4rem;font-size:.92rem;font-weight:500;color:rgba(255,255,255,.85)}
+input,textarea,select{font:inherit;font-size:1rem;color:var(--ink);background:var(--white);border:2px solid transparent;border-radius:10px;padding:.75rem .9rem;width:100%}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--sun)}
+textarea{min-height:130px;resize:vertical}
+.form-note{font-size:.85rem;color:rgba(255,255,255,.6)}
+.form-error{font-size:.9rem;color:var(--sun);min-height:1.3em}
+form .btn{width:100%;cursor:pointer}
+
+/* Footer */
+footer{background:#2a1a3c;color:rgba(255,255,255,.7);padding:2.2rem 0;font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 2rem}
+footer a{color:rgba(255,255,255,.85)}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero .wrap,.section-head,.stack .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr}
+  .mark-art{justify-self:start;max-width:170px;order:-1}
+  .service{grid-template-columns:14px 1fr;row-gap:.6rem}
+  .service > div:last-child{grid-column:2}
+  .swatch{width:14px;height:40px}
+  .steps{grid-template-columns:1fr 1fr}
+  .steps::before{display:none}
+}
+@media (max-width:760px){
+  .nav{position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid rgba(50,31,71,.12);padding:.5rem 1.25rem 1.25rem;display:none}
+  .nav.open{display:flex}
+  .nav a{padding:.85rem 0;border-bottom:1px solid rgba(50,31,71,.08);font-size:1.05rem}
+  .nav .btn{margin-top:1rem;border-bottom:2px solid var(--ink)}
+  .menu-toggle{display:block}
+  .brand span{font-size:.98rem}
+}
+@media (max-width:520px){
+  .steps,.stack-groups{grid-template-columns:1fr}
+  .hero .actions .btn,.contact .actions .btn{flex:1 1 100%}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Bhupendra Tech Solutions home">
+      <img src="favicon.svg" alt="" width="34" height="38">
+      <span>Bhupendra Tech Solutions</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 8h18M4 13h18M4 18h18"/></svg>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#services">Services</a>
+      <a href="#process">How we work</a>
+      <a href="#about">About</a>
+      <a class="btn btn-solid" href="#contact">Start a project</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Software and data systems that keep working after launch.</h1>
+        <p class="lede">We design and build web apps, mobile apps, data platforms and AI-powered tools for growing businesses, with the care of an in-house engineering team.</p>
+        <div class="actions">
+          <a class="btn btn-solid" href="#contact">Start a project</a>
+          <a class="btn btn-line" href="https://wa.me/919538960710" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+        <p class="where"><span class="dot" aria-hidden="true"></span>Based in Mhow, Indore. Working with clients across India and abroad.</p>
+      </div>
+
+      <svg class="mark-art" viewBox="0 0 340 380" role="img" aria-label="Bhupendra Tech Solutions logo mark">
+        <path class="block b1" fill="#7FC3D1" d="M78 6H231Q281 6 281 56V116Q281 172 231 172H68V16Q68 6 78 6Z"/>
+        <path class="block b2" fill="#FDC04F" d="M68 166H231Q281 166 281 216V274Q281 324 231 324H68Z"/>
+        <path class="block b3" fill="#5C7B00" d="M68 149H254Q274 149 279 172Q274 181 254 181H68Z"/>
+        <g fill="none" stroke="#321F47" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+          <path class="trace" style="--len:720" d="M26 36H262Q311 36 311 86V140Q311 180 278 191Q311 205 311 250V306Q311 358 256 358"/>
+          <path class="trace" style="--len:230" d="M98 74V294"/>
+          <path class="trace" style="--len:190" d="M98 191H278"/>
+        </g>
+        <g fill="#321F47">
+          <circle class="node n1" cx="26" cy="36" r="16"/>
+          <circle class="node n2" cx="98" cy="74" r="18"/>
+          <circle class="node n3" cx="98" cy="294" r="18"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What we build</h2>
+        <p>From a first version of your product to the data systems behind a growing business, we handle design, engineering and deployment end to end.</p>
+      </div>
+      <ul class="service-list">
+        <li class="service">
+          <span class="swatch" style="background:var(--sky)" aria-hidden="true"></span>
+          <h3>Web applications</h3>
+          <div>
+            <p>Customer portals, internal tools, dashboards and SaaS products. Fast, secure and easy for your team to use every day.</p>
+            <ul class="tags"><li>React</li><li>Next.js</li><li>Node.js</li><li>FastAPI</li></ul>
+          </div>
+        </li>
+        <li class="service">
+          <span class="swatch" style="background:var(--leaf)" aria-hidden="true"></span>
+          <h3>Data engineering and analytics</h3>
+          <div>
+            <p>We connect your ERP, sales and operations data into one reliable place, then build the reports and dashboards your decisions depend on.</p>
+            <ul class="tags"><li>ETL pipelines</li><li>PostgreSQL</li><li>SQL Server</li><li>Dashboards</li></ul>
+          </div>
+        </li>
+        <li class="service">
+          <span class="swatch" style="background:var(--sun)" aria-hidden="true"></span>
+          <h3>Mobile apps</h3>
+          <div>
+            <p>Android and iOS apps from a single codebase, built for real users on real networks, and published on the Play Store and App Store.</p>
+            <ul class="tags"><li>React Native</li><li>Android</li><li>iOS</li></ul>
+          </div>
+        </li>
+        <li class="service">
+          <span class="swatch" style="background:var(--ink)" aria-hidden="true"></span>
+          <h3>AI and automation</h3>
+          <div>
+            <p>AI assistants, document and data processing, web data collection and workflow automation that take repetitive work off your team.</p>
+            <ul class="tags"><li>LLM integration</li><li>Web scraping</li><li>Automation</li></ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How we work</h2>
+        <p>A clear process with a working build in your hands early, so there are no surprises at the end.</p>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <span class="num"></span>
+          <h3>Understand</h3>
+          <p>We learn your business, your users and the problem worth solving before writing any code.</p>
+        </li>
+        <li class="step">
+          <span class="num"></span>
+          <h3>Plan</h3>
+          <p>You get a written scope, timeline and cost estimate, with the first release kept small.</p>
+        </li>
+        <li class="step">
+          <span class="num"></span>
+          <h3>Build</h3>
+          <p>We ship in short cycles and show you working software every week or two.</p>
+        </li>
+        <li class="step">
+          <span class="num"></span>
+          <h3>Launch and support</h3>
+          <p>We deploy, monitor and keep improving it, and your code and data stay yours.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="stack">
+    <div class="wrap">
+      <div>
+        <h2>Proven tools, chosen for the job</h2>
+        <p class="intro">We use well-supported, widely adopted technology so your product is easy to maintain and hire for later.</p>
+      </div>
+      <div class="stack-groups">
+        <div><h3>Frontend and mobile</h3><p>React, Next.js, TypeScript, React Native</p></div>
+        <div><h3>Backend</h3><p>Node.js, Python, FastAPI, REST and GraphQL APIs</p></div>
+        <div><h3>Data</h3><p>PostgreSQL, MS SQL Server, data pipelines, analytics</p></div>
+        <div><h3>Cloud and AI</h3><p>AWS, Docker, CI/CD, LLM APIs</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <h2>Senior engineering, without the agency overhead</h2>
+      <div class="body">
+        <p>Bhupendra Tech Solutions is a software engineering firm based in Mhow, Indore, founded by <strong>Bhupendra Singh</strong>.</p>
+        <p>Bhupendra has more than ten years of experience building products and data systems at technology companies including Acceldata, Scripbox and Nestaway. Every project is led by an experienced engineer from the first call to launch.</p>
+        <ul class="facts">
+          <li>10+ years of software engineering experience</li>
+          <li>Registered business with GSTIN 23DMEPS7479J1ZD</li>
+          <li>Clients in India and abroad</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div>
+        <h2>Tell us what you're building</h2>
+        <p class="lede">Share a few lines about your project and we'll reply within one working day.</p>
+        <ul class="channels">
+          <li><span class="label">Email</span><a href="mailto:info@bhutechsol.com">info@bhutechsol.com</a></li>
+          <li><span class="label">Phone and WhatsApp</span><a href="tel:+919538960710">+91 95389 60710</a></li>
+          <li><span class="label">Address</span><span class="value">01, Narayan Dham, Gawli Palasia,<br>Mhow, Indore – 453441, Madhya Pradesh</span></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-solid" href="https://wa.me/919538960710" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a class="btn btn-line" href="tel:+919538960710">Call us</a>
+        </div>
+      </div>
+
+      <form id="enquiry" novalidate>
+        <h3>Send an enquiry</h3>
+        <label>Your name<input name="name" autocomplete="name" required></label>
+        <label>Email or phone<input name="contact" autocomplete="email" required></label>
+        <label>What do you need?
+          <select name="type">
+            <option>Web application</option>
+            <option>Data engineering and analytics</option>
+            <option>Mobile app</option>
+            <option>AI and automation</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Project details<textarea name="details" required placeholder="What are you building, and by when?"></textarea></label>
+        <p class="form-error" role="alert" aria-live="polite"></p>
+        <button class="btn btn-solid" type="submit">Send enquiry</button>
+        <p class="form-note">This opens your email app with your message filled in, addressed to info@bhutechsol.com.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Bhupendra Tech Solutions. GSTIN 23DMEPS7479J1ZD</span>
+    <span><a href="mailto:info@bhutechsol.com">info@bhutechsol.com</a> &nbsp;|&nbsp; <a href="tel:+919538960710">+91 95389 60710</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  document.getElementById('enquiry').addEventListener('submit', e => {
+    e.preventDefault();
+    const f = e.target.elements, err = e.target.querySelector('.form-error');
+    const name = f.name.value.trim(), contact = f.contact.value.trim(), details = f.details.value.trim();
+    if (!name || !contact || !details) {
+      err.textContent = 'Add your name, a way to reach you and a few project details.';
+      return;
+    }
+    err.textContent = '';
+    const subject = `Project enquiry: ${f.type.value} (${name})`;
+    const body = `Name: ${name}\nContact: ${contact}\nService: ${f.type.value}\n\n${details}`;
+    window.location.href = `mailto:info@bhutechsol.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+</script>
+</body>
+</html>
